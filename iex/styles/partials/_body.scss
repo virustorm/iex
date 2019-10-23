@@ -8,6 +8,16 @@
   }
 }
 
+.stock-name {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.stock-id {
+  font-weight: 300;
+  font-size: 13px;
+}
+
 .symbol-card {
   width: 100%;
   text-align: center;
@@ -23,5 +33,28 @@
 
   .symbol-card {
     width: 25%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .symbol-card:hover {
+    transform: scale(1.1);
+  }
+}
+
+@include desktop {
+  .symbol-card {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .stock-name {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .stock-id {
+    font-weight: 300;
+    font-size: 20px;
   }
 }
