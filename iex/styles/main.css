@@ -4,10 +4,32 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-body div {
-  margin: 10px;
+  margin: 10px 3%;
+}
+
+.symbol-card {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f6fa;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-body {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .symbol-card {
+    width: 25%;
+  }
 }
 
 .search {
@@ -20,11 +42,44 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px 0;
 }
 
 .search-input {
   width: 70%;
-  font-size: 16px;
+  font-size: 30px;
   border: 3px solid black;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.search-input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.search-input:-ms-input-placeholder {
+  text-align: center;
+}
+
+.search-input::-ms-input-placeholder {
+  text-align: center;
+}
+
+.search-input::placeholder {
+  text-align: center;
+}
+
+.search-input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 10px 10px lightgrey;
+          box-shadow: 0 0 10px 10px lightgrey;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
 }
 /*# sourceMappingURL=main.css.map */
