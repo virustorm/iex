@@ -113,6 +113,16 @@
           box-shadow: 0 0 10px 10px lightgrey;
 }
 
+@media only screen and (min-width: 1440px) {
+  .search {
+    margin: 50px 0 40px 0;
+  }
+  .search-input {
+    height: 75px;
+    font-size: 50px;
+  }
+}
+
 html,
 body {
   margin: 0;
